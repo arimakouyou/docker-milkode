@@ -13,10 +13,13 @@ ex.
 等２階層目にプロジェクトがくるようにします
 
 ・イメージのビルド or ダウンロード
-$ docker build -t milkode .
+
+$ docker build -t docker-milkode .
+
+$docker pull arimakouyou/docker-milkode
 
 ・起動
-$ docker run -d --name milkode -v /usr/local/src/milk:/milk -p 9292:9292 arimakouyou/milkode
+$ docker run -d --name milkode -v /usr/local/src/milk:/milk -p 9292:9292 arimakouyou/docker-milkode
  -it とかつけとくとログが標準出力に出てくる
 
 
